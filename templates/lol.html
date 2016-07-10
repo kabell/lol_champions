@@ -19,7 +19,16 @@
         }
         play();
     </script>
-<button onclick="play()"><img width="100px" src="https://image.freepik.com/free-icon/rounded-play-button_318-9366.jpg"></button><br>
+    <button onclick="play()"><img width="100px" src="https://image.freepik.com/free-icon/rounded-play-button_318-9366.jpg"></button><br>
+
+  <h2>Simple Collapsible</h2>
+    <div id="show"></div>
+    <script>
+        function show(){
+            document.getElementById('show').innerHTML = '{{ champion.name }}';
+        }
+    </script>
+  <button type="button" class="btn btn-info" onclick="show()">Ukáž</button>
     <h1>{{ sprava }}</h1><br/>
 Spravne:{{ spravne }}<br/>
 Nepravne:{{ nespravne }}<br/>
