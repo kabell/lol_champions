@@ -12,11 +12,14 @@
 <body>
 
     <script>
+        function play(){
                 var audioElement = document.createElement('audio');
                 audioElement.setAttribute('src', '{% static '.' %}/data/{{ champion.mp3 }}');
                 audioElement.play();
+        }
+        play();
     </script>
-
+<button onclick="play()"><img width="100px" src="https://image.freepik.com/free-icon/rounded-play-button_318-9366.jpg"></button><br>
     <h1>{{ sprava }}</h1><br/>
 Spravne:{{ spravne }}<br/>
 Nepravne:{{ nespravne }}<br/>
